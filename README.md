@@ -7,19 +7,19 @@ The GitHub App is used to authorize API access across multiple repositories.
 
 Install the dependencies
 ```bash
-$ yarn
+yarn
 ```
 
 Build the typescript and package it for distribution
 ```bash
-$ yarn build
+yarn build
 ```
 
 ## Usage
 
 You will need to provide the GitHub App ID and private key. The action will then provide a `token` output.
 
-```
+```yml
   - name: my-app-install token
     id: my-app
     uses: getsentry/action-github-app-token@v1
